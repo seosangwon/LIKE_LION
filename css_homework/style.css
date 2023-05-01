@@ -1,6 +1,6 @@
 .main_header{
     width: 960px;
-    margin: 0 auto;
+    margin: 0 auto;    /*가로방향으로 가운데 정렬*/
 
     height:160px;
     position: relative;
@@ -8,11 +8,12 @@
     background-image: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6,#caffbf,#9bf6ff,#a0c4ff,#bdb2ff,#ffc6ff,#fffffc);
 
 }
+/*html,css,java,spring...*/
 
 .head_list{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: end; /*오른쪽 정ㄹ렬*/
 
 
 }
@@ -23,17 +24,23 @@
 
 }
 
+
+/*askme 버튼*/
 .input{
     border-radius: 10px;
 }
 
 
+/*container 안에 list*/
 .list{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+
+
+/*관심사 글자*/
 .interesting{
     font-size: 20px;
     font-weight: bold;
@@ -45,6 +52,8 @@
 
 }
 
+
+
 .container {
     background-color: #F5F5F5;
     border: 1px solid #CCCCCC;
@@ -52,8 +61,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /*// 플렉스 컨테이너 내에서 item들의 간격 시작은 왼쪽, 마지막은 오른쪽 정렬*/
+    align-items: center; /*//가운데 정렬*/
     width: 200px;
     height: 350px;
     margin: 20px;
@@ -64,6 +73,7 @@
     font-weight: bold;
 }
 
+/*이미지, 이름, 장르*/
 .item {
     display: flex;
     flex-direction: column;
@@ -71,7 +81,7 @@
     align-items: flex-end;
 }
 
-
+/*이름 */
 .name {
     font-size: 17px;
     margin: 10px;
@@ -91,9 +101,8 @@
 
 .sidebar {
     height: 70%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
+    width: 150px;
+    position: fixed; /*사이드바 위치 고정*/
     top: 20px;
     left: 0;
     background-color : whitesmoke;
@@ -101,18 +110,19 @@
 
 }
 
+
+/*사이드바 상단 margin 최소화*/
 .sidebar h2 {
     margin-top: 0;
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style-type: none; /*점 없애주기*/
     padding: 0;
 }
 
 .sidebar li {
     margin-bottom: 10px;
 }
-
 
 
